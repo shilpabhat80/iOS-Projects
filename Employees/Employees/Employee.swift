@@ -44,7 +44,7 @@ struct Employee {
     }
 }
 
-// MARK: Request [Handler]
+// MARK: EmployeeRequestHandler
 
 struct EmployeeRequestHandler
 {
@@ -53,7 +53,7 @@ struct EmployeeRequestHandler
     }
 }
 
-// MARK: Response [Handler]
+// MARK: EmployeeResponseHandler
 
 enum FetchEmployeeResults {
     case success([Employee])
@@ -86,7 +86,7 @@ struct EmployeeResponseHandler {
     }
 }
 
-// MARK:
+// MARK: EmployeeStore class
 class EmployeeStore {
     
     private let session = URLSession.shared

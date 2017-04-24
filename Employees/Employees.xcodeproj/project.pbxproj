@@ -86,14 +86,30 @@
 				BD4BA0B11E958C6200E6BEA8 /* AppDelegate.swift */,
 				BD4BA0C51E95B54400E6BEA8 /* EmployeeListViewController.swift */,
 				BD8D51111E9D65FC00F94ED1 /* EmployeeDetailViewController.swift */,
-				BD4BA0C31E958FE000E6BEA8 /* Employee.swift */,
-				BD8D510F1E9D5A6900F94ED1 /* EmployeeCellView.swift */,
+				BD7B4D361EAE51E000223B87 /* Model */,
+				BD7B4D371EAE51F200223B87 /* View */,
 				BD4BA0B51E958C6200E6BEA8 /* Main.storyboard */,
 				BD4BA0B81E958C6200E6BEA8 /* Assets.xcassets */,
 				BD4BA0BA1E958C6200E6BEA8 /* LaunchScreen.storyboard */,
 				BD4BA0BD1E958C6200E6BEA8 /* Info.plist */,
 			);
 			path = Employees;
+			sourceTree = "<group>";
+		};
+		BD7B4D361EAE51E000223B87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD4BA0C31E958FE000E6BEA8 /* Employee.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BD7B4D371EAE51F200223B87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD8D510F1E9D5A6900F94ED1 /* EmployeeCellView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		BD9706801E9DD90B009A84F1 /* EmployeesTests */ = {
@@ -427,6 +443,7 @@
 				BD9706881E9DD90B009A84F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
