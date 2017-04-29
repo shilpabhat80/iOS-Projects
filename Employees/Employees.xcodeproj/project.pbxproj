@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD159EBD1EB259AE000FF326 /* EmploeeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD159EBC1EB259AE000FF326 /* EmploeeTestCase.swift */; };
 		BD159EBE1EB25B06000FF326 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BA0C31E958FE000E6BEA8 /* Employee.swift */; };
 		BD159F5C1EB4C24A000FF326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD159F5B1EB4C24A000FF326 /* AppDelegate.swift */; };
 		BD159F5E1EB4C24A000FF326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD159F5D1EB4C24A000FF326 /* ViewController.swift */; };
@@ -17,6 +16,7 @@
 		BD159F6F1EB4CCEC000FF326 /* EmployeeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD159F6E1EB4CCEC000FF326 /* EmployeeStore.swift */; };
 		BD159F701EB4CD52000FF326 /* EmployeeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD159F6E1EB4CCEC000FF326 /* EmployeeStore.swift */; };
 		BD159F711EB4CD53000FF326 /* EmployeeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD159F6E1EB4CCEC000FF326 /* EmployeeStore.swift */; };
+		BD159F731EB4D068000FF326 /* EmployeesTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD159F721EB4D068000FF326 /* EmployeesTestCase.swift */; };
 		BD4BA0B21E958C6200E6BEA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BA0B11E958C6200E6BEA8 /* AppDelegate.swift */; };
 		BD4BA0B71E958C6200E6BEA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4BA0B51E958C6200E6BEA8 /* Main.storyboard */; };
 		BD4BA0B91E958C6200E6BEA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4BA0B81E958C6200E6BEA8 /* Assets.xcassets */; };
@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BD159EBC1EB259AE000FF326 /* EmploeeTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmploeeTestCase.swift; path = EmployeesTests/EmploeeTestCase.swift; sourceTree = SOURCE_ROOT; };
 		BD159F591EB4C249000FF326 /* EmployeesMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeesMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD159F5B1EB4C24A000FF326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD159F5D1EB4C24A000FF326 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		BD159F621EB4C24A000FF326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD159F641EB4C24A000FF326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD159F6E1EB4CCEC000FF326 /* EmployeeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeStore.swift; sourceTree = "<group>"; };
+		BD159F721EB4D068000FF326 /* EmployeesTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeesTestCase.swift; sourceTree = "<group>"; };
 		BD4BA0AE1E958C6200E6BEA8 /* Employees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Employees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4BA0B11E958C6200E6BEA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD4BA0B61E958C6200E6BEA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		BD9706801E9DD90B009A84F1 /* EmployeesTests */ = {
 			isa = PBXGroup;
 			children = (
-				BD159EBC1EB259AE000FF326 /* EmploeeTestCase.swift */,
+				BD159F721EB4D068000FF326 /* EmployeesTestCase.swift */,
 				BD9706831E9DD90B009A84F1 /* Info.plist */,
 			);
 			path = EmployeesTests;
@@ -327,8 +327,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD159EBE1EB25B06000FF326 /* Employee.swift in Sources */,
+				BD159F731EB4D068000FF326 /* EmployeesTestCase.swift in Sources */,
 				BD159F711EB4CD53000FF326 /* EmployeeStore.swift in Sources */,
-				BD159EBD1EB259AE000FF326 /* EmploeeTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
