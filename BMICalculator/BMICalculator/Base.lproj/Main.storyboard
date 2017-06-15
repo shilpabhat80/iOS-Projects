@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Qkx-Df-afL">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BMI Calculator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMICalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wvc-Ub-Qyi">
+                                <rect key="frame" x="20" y="84" width="984" height="334"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j9j-CA-l8G">
+                                        <rect key="frame" x="0.0" y="0.0" width="984" height="29"/>
+                                        <segments>
+                                            <segment title="Imperial"/>
+                                            <segment title="Metric"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="formulaTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="JhF-QQ-yZj"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YFL-9h-2q6" userLabel="Metric Height Stack View">
+                                        <rect key="frame" x="0.0" y="48" width="984" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng0-sd-B2n">
+                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Height here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="444-yc-n4q">
+                                                <rect key="frame" x="75.5" y="0.0" width="908.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r1q-C5-Twh" userLabel="Imperial Height Stack View">
+                                        <rect key="frame" x="0.0" y="98" width="984" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-iX-cbi">
+                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u3b-4x-DHv">
+                                                <rect key="frame" x="75.5" y="0.0" width="908.5" height="30"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oYH-EA-WrO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="779" height="30"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Feet" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xy6-eW-KiF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="759" height="30"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbG-Ke-jdL">
+                                                                <rect key="frame" x="767" y="0.0" width="12" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-FC-bee">
+                                                        <rect key="frame" x="787" y="0.0" width="121.5" height="30"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inches" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELq-VL-dy3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="63.5" height="30"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6m-3x-CdR">
+                                                                <rect key="frame" x="71.5" y="0.0" width="50" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-Qx-GoE" userLabel="Metric Weight Stack View">
+                                        <rect key="frame" x="0.0" y="148" width="984" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-cd-Usm">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-ek-vRG">
+                                                <rect key="frame" x="78.5" y="0.0" width="905.5" height="30"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Weight here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srG-xF-aPd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="877" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1p6-1O-TVP">
+                                                        <rect key="frame" x="885" y="0.0" width="20.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-nP-KM0" userLabel="Imperial Weight Stack View">
+                                        <rect key="frame" x="0.0" y="198" width="984" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEQ-Ia-RPX">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h2g-LQ-x6o">
+                                                <rect key="frame" x="78.5" y="0.0" width="905.5" height="30"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Weight here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5d-Xc-drq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="875" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxd-K0-cE4" userLabel="lbs">
+                                                        <rect key="frame" x="883" y="0.0" width="22.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTb-ue-Qjq">
+                                        <rect key="frame" x="0.0" y="248" width="984" height="30"/>
+                                        <state key="normal" title="Compute BMI"/>
+                                        <connections>
+                                            <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASi-zE-qc4"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3QN-bZ-YGt">
+                                        <rect key="frame" x="0.0" y="298" width="984" height="36"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1er-vY-xxN">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="59" id="Gf6-qg-zUy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCl-Ec-JQt">
+                                                <rect key="frame" x="79" y="0.0" width="905" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="r1q-C5-Twh" firstAttribute="leading" secondItem="wvc-Ub-Qyi" secondAttribute="leading" id="83m-Wr-iik"/>
+                                    <constraint firstAttribute="trailing" secondItem="r1q-C5-Twh" secondAttribute="trailing" id="9SL-86-eUR"/>
+                                    <constraint firstItem="3QN-bZ-YGt" firstAttribute="leading" secondItem="wvc-Ub-Qyi" secondAttribute="leading" id="E7I-Rx-Vrt"/>
+                                    <constraint firstItem="UGO-Qx-GoE" firstAttribute="leading" secondItem="wvc-Ub-Qyi" secondAttribute="leading" id="HQy-ie-8he"/>
+                                    <constraint firstAttribute="trailing" secondItem="YFL-9h-2q6" secondAttribute="trailing" id="NHe-4G-jil"/>
+                                    <constraint firstAttribute="trailing" secondItem="UGO-Qx-GoE" secondAttribute="trailing" id="PkX-KI-51v"/>
+                                    <constraint firstAttribute="trailing" secondItem="3QN-bZ-YGt" secondAttribute="trailing" id="YOV-n2-6Dc"/>
+                                    <constraint firstItem="j9j-CA-l8G" firstAttribute="leading" secondItem="wvc-Ub-Qyi" secondAttribute="leading" id="asN-WD-uVV"/>
+                                    <constraint firstAttribute="trailing" secondItem="j9j-CA-l8G" secondAttribute="trailing" id="iTj-7O-bhi"/>
+                                    <constraint firstItem="z1y-nP-KM0" firstAttribute="leading" secondItem="wvc-Ub-Qyi" secondAttribute="leading" id="imn-r8-cfh"/>
+                                    <constraint firstItem="QTb-ue-Qjq" firstAttribute="centerX" secondItem="wvc-Ub-Qyi" secondAttribute="centerX" id="nEZ-da-4L7"/>
+                                    <constraint firstAttribute="trailing" secondItem="z1y-nP-KM0" secondAttribute="trailing" id="uNN-Pg-Goq"/>
+                                    <constraint firstItem="YFL-9h-2q6" firstAttribute="leading" secondItem="wvc-Ub-Qyi" secondAttribute="leading" id="ywn-DD-VYG"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZE-sS-kf7">
+                                <rect key="frame" x="20" y="438" width="984" height="908"/>
+                                <color key="backgroundColor" red="0.97468206989999995" green="0.99942404029999998" blue="0.6611818062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">BMI Categories: 
+
+Underweight = &lt;18.5
+Normal weight = 18.5–24.9 
+Overweight = 25–29.9 
+Obesity = BMI of 30 or greater</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wvc-Ub-Qyi" secondAttribute="trailing" id="12x-Ay-DM5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eZE-sS-kf7" secondAttribute="trailing" id="4h3-kY-SUR"/>
+                            <constraint firstItem="wvc-Ub-Qyi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="MOl-vf-jV3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eZE-sS-kf7" secondAttribute="bottom" constant="20" id="PYi-KK-ESU"/>
+                            <constraint firstItem="wvc-Ub-Qyi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SWk-Vx-5Qk"/>
+                            <constraint firstItem="eZE-sS-kf7" firstAttribute="top" secondItem="wvc-Ub-Qyi" secondAttribute="bottom" constant="20" id="b6Z-18-XQa"/>
+                            <constraint firstItem="eZE-sS-kf7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="s52-Sf-amy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="BMI Calculator" id="CWG-o5-7zP"/>
+                    <connections>
+                        <outlet property="bmiLabel" destination="uCl-Ec-JQt" id="5AL-aS-JPr"/>
+                        <outlet property="heightInFeetTextField" destination="Xy6-eW-KiF" id="Nfd-xz-xSn"/>
+                        <outlet property="heightInInchesTextField" destination="ELq-VL-dy3" id="ql4-Al-XFm"/>
+                        <outlet property="heightTextField" destination="444-yc-n4q" id="q9a-5W-Yde"/>
+                        <outlet property="imperialHeightStackView" destination="r1q-C5-Twh" id="q5Q-1I-aDR"/>
+                        <outlet property="imperialWeightStackView" destination="z1y-nP-KM0" id="e2a-BN-gt2"/>
+                        <outlet property="metricHeightStackView" destination="YFL-9h-2q6" id="2oa-2m-ci9"/>
+                        <outlet property="metricWeightStackView" destination="UGO-Qx-GoE" id="cLv-j5-3M4"/>
+                        <outlet property="weightInPoundTextField" destination="k5d-Xc-drq" id="CQe-Oq-w3z"/>
+                        <outlet property="weightTextField" destination="srG-xF-aPd" id="Yzj-ZW-GKH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BHL-UB-WLX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qkx-Df-afL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V3H-dY-1eb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tqX-L2-b24"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7s2-td-1pU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
