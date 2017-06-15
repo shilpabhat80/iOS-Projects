@@ -1,0 +1,15 @@
+PODS:
+  - Nuke (5.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Nuke (~> 5.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Nuke: 8ab71e77f6a54ff5fb697f93537c35f419bb01f7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: c9f9a832a71cc906005e4b86ace9f20bfa04c5d4
+
+COCOAPODS: 1.2.1
