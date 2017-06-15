@@ -28,6 +28,8 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         collectionView?.scrollIndicatorInsets = UIEdgeInsets(top: 50, left: 0, bottom: 0, right: 0)
         
         setUpMenuBar()
+       // setupNavBarButtons()
+        
     }
     
     let menuBar: MenuBar = {
@@ -40,6 +42,13 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         view.addConstraintsWithName("H:|[v0]|", views: menuBar)
         view.addConstraintsWithName("V:|[v0(50)]", views: menuBar)
     }
+    
+//    func setupNavBarButtons() {
+//        
+//        let searchImage = UIImage(named: "Search_image")?.withRenderingMode(.alwaysTemplate)
+//        let searchImage
+//    
+//    }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 50

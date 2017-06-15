@@ -14,4 +14,15 @@ class EmployeeCellView : UITableViewCell {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     
+    var employee:Employee? {
+        didSet {
+            
+            guard let employee =  employee else { return }
+
+            nameLabel?.text = employee.name
+            phoneLabel?.text = employee.phone
+            emailLabel?.text = employee.email
+        }
+    }
+    
 }

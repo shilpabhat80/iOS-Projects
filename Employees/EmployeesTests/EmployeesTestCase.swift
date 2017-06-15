@@ -10,16 +10,34 @@ import XCTest
 
 class EmployeesTests: XCTestCase {
     
+    var employeeStore:EmployeeStore!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        employeeStore = EmployeeStore()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        employeeStore = nil
         super.tearDown()
     }
     
+    func testEmployeeDetails() {
+        
+        let promise = expectation(description: "Employee results not fetched")
+        
+        employeeStore.fetchEmployees { (employeeResults) in
+            switch employeeResults {
+                case .success(_):
+                    promise.fulfill()
+                default:
+                    XCTFail("Employee results not fetched")
+            }
+        }
+        
+        let result = XCTWaiter().wait(for: [promise], timeout: 1)
+        XCTAssertEqual(result, .completed);
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

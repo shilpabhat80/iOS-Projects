@@ -20,11 +20,13 @@ class EmployeeDetailViewController: UIViewController {
     @IBOutlet weak var idLabel: UILabel!
 
     func updateEmployeeInfo() {
-        self.nameLabel.text = employee?.name
-        self.emailLabel.text = employee?.email
-        self.phoneLabel.text = employee?.phone
-        self.customNameLabel.text = employee?.username
-        self.idLabel.text = employee?.id
+        guard let employee = employee else { return }
+        
+        self.nameLabel.text = employee.name
+        self.emailLabel.text = employee.email
+        self.phoneLabel.text = employee.phone
+        self.customNameLabel.text = employee.username
+        self.idLabel.text = employee.id
     }
     
     override func viewDidLoad() {

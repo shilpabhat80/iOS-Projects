@@ -50,8 +50,8 @@ struct EmployeeResponseHandler {
         }
         var employees:[Employee] = []
         for case let result in fetchedEmployees {
-            if let employee = try? Employee(json:result as! [String:Any]) {
-                employees.append(employee!)
+            if let employee = Employee(json:result as! [String:Any]) {
+                employees.append(employee)
             }
         }
         return FetchEmployeeResults.success(employees)
@@ -59,7 +59,7 @@ struct EmployeeResponseHandler {
 }
 
 // MARK:
-class EmployeeStore {
+struct EmployeeStore {
     
     private let session = URLSession.shared
     
@@ -77,24 +77,5 @@ class EmployeeStore {
             completion(employeeResults)
         })
         task.resume()
-    }
-    
-    func readEmployeesFromFile(completion: @escaping (FetchEmployeeResults) -> Void) {
-        
-        let file = "file.txt"
-        guard
-            let filePath = FileManager.default.urls(for: .desktopDirectory, in: .userDomainMask).first?.absoluteString.appending(file),
-            let sourceFileURL = URL(string: filePath) else {
-                return
-        }
-        
-        guard let fileData = try? Data.init(contentsOf: sourceFileURL, options: [])
-            else {
-                return
-        }
-        
-        let employeeResults = EmployeeResponseHandler.processEmployeeResults(data: fileData, error: nil)
-        
-        completion(employeeResults)
     }
 }
