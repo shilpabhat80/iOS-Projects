@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 enum CMBSerializationError: Error {
     case noJSONData
@@ -48,16 +49,30 @@ class CMBTeamStore {
         guard let usableData = data else {
             return CMBFetchTeamResults.failure(CMBSerializationError.noJSONData)
         }
-        guard let fetchedEmployees = try? JSONSerialization.jsonObject(with: usableData, options: []) as? [Any] else {
-            return CMBFetchTeamResults.failure(CMBSerializationError.failureForJSONConv)
-        }
+        
         var employees:[CMBPerson] = []
-        for case let result in fetchedEmployees! {
-            if let employee = try? CMBPerson(json:result as! [String:Any]) {
-                employees.append(employee!)
+
+        let useSwiftyJSON = true
+        if (useSwiftyJSON) {
+            let employeesResults = JSON(usableData)
+            for result in employeesResults.arrayValue {
+                if let employee = try? CMBPerson(json:result) {
+                    employees.append(employee!)
+                }
             }
         }
-        return CMBFetchTeamResults.success(employees)
+        else {
+            guard let fetchedEmployees = try? JSONSerialization.jsonObject(with: usableData, options: []) as? [Any] else {
+                return CMBFetchTeamResults.failure(CMBSerializationError.failureForJSONConv)
+            }
+            for case let result in fetchedEmployees! {
+                if let employee = try? CMBPerson(json:result as! [String:Any]) {
+                    employees.append(employee!)
+                }
+            }
+        }
+        
+       return CMBFetchTeamResults.success(employees)
     }
 
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 struct CMBPerson {
     var avatar: String = ""
@@ -25,6 +26,18 @@ struct CMBPerson {
             return "\(firstNameChar)\(lastNameChar)"
         }
     }
+    
+    init?(json: JSON) throws {
+        
+        self.avatar = json["avatar"].stringValue
+        self.bio = json["bio"].stringValue
+        self.firstName = json["firstName"].stringValue
+        self.id = json["id"].stringValue
+        self.lastName = json["lastName"].stringValue
+        self.title = json["title"].stringValue
+    }
+
+    
     init?(json: [String: Any]) throws {
         
         if let avatar = json["avatar"] as? String {
