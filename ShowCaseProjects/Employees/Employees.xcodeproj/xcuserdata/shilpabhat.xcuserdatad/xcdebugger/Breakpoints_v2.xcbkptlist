@@ -19,5 +19,160 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeUITests/EmployeesUITests.swift"
+            timestampString = "519301770.815335"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "setUp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeeUITests/EmployeesUITests.swift"
+            timestampString = "519302150.501002"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testAppTitle()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EmployeesUITests/EmployeesUITests.swift"
+            timestampString = "519303288.504111"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "EmployeesUITests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeesUITests.EmployeesUITests.__deallocating_deinit"
+                  moduleName = "EmployeesUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shilpabhat/Desktop/Developer/iOS-Projects/ShowCaseProjects/Employees/EmployeesUITests/EmployeesUITests.swift"
+                  timestampString = "519303295.330686"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeesUITests.EmployeesUITests.init (invocation : Swift.Optional&lt;__ObjC.NSInvocation&gt;) -&gt; EmployeesUITests.EmployeesUITests"
+                  moduleName = "EmployeesUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shilpabhat/Desktop/Developer/iOS-Projects/ShowCaseProjects/Employees/EmployeesUITests/EmployeesUITests.swift"
+                  timestampString = "519303295.332269"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeesUITests.EmployeesUITests.__allocating_init (invocation : Swift.Optional&lt;__ObjC.NSInvocation&gt;) -&gt; EmployeesUITests.EmployeesUITests"
+                  moduleName = "EmployeesUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shilpabhat/Desktop/Developer/iOS-Projects/ShowCaseProjects/Employees/EmployeesUITests/EmployeesUITests.swift"
+                  timestampString = "519303295.333835"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeesUITests.EmployeesUITests.init (selector : ObjectiveC.Selector) -&gt; EmployeesUITests.EmployeesUITests"
+                  moduleName = "EmployeesUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shilpabhat/Desktop/Developer/iOS-Projects/ShowCaseProjects/Employees/EmployeesUITests/EmployeesUITests.swift"
+                  timestampString = "519303295.33545"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeesUITests.EmployeesUITests.__allocating_init (selector : ObjectiveC.Selector) -&gt; EmployeesUITests.EmployeesUITests"
+                  moduleName = "EmployeesUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shilpabhat/Desktop/Developer/iOS-Projects/ShowCaseProjects/Employees/EmployeesUITests/EmployeesUITests.swift"
+                  timestampString = "519303295.337021"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeesUITests.EmployeesUITests.init () -&gt; EmployeesUITests.EmployeesUITests"
+                  moduleName = "EmployeesUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shilpabhat/Desktop/Developer/iOS-Projects/ShowCaseProjects/Employees/EmployeesUITests/EmployeesUITests.swift"
+                  timestampString = "519303295.338522"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EmployeesUITests.EmployeesUITests.__allocating_init () -&gt; EmployeesUITests.EmployeesUITests"
+                  moduleName = "EmployeesUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shilpabhat/Desktop/Developer/iOS-Projects/ShowCaseProjects/Employees/EmployeesUITests/EmployeesUITests.swift"
+                  timestampString = "519303295.340202"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
