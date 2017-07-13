@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WaterFlo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="BackgroundView" customModule="WaterFlo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6t-mF-ace" userLabel="Container View">
+                                <rect key="frame" x="37" y="20" width="300" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIz-P6-5i5" customClass="CounterView" customModule="WaterFlo" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="35" width="230" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzl-a3-nn3">
+                                                <rect key="frame" x="94" y="105" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="bAS-Wi-2Cs"/>
+                                            <constraint firstAttribute="height" constant="230" id="eze-jt-7Qk"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.30196835849999998" green="0.99967086520000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLk-LD-UWd" customClass="GraphView" customModule="WaterFlo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="300" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="5q5-fw-1Rf"/>
+                                            <constraint firstAttribute="height" constant="250" id="xo0-H7-Wel"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="1" green="0.30980392156862746" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.9882352941176471" green="0.9137254901960784" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97468206989999995" green="0.99942404029999998" blue="0.6611818062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="LIz-P6-5i5" firstAttribute="centerX" secondItem="D6t-mF-ace" secondAttribute="centerX" id="T8p-mZ-gGg"/>
+                                    <constraint firstItem="LIz-P6-5i5" firstAttribute="centerY" secondItem="D6t-mF-ace" secondAttribute="centerY" id="UeD-im-D8M"/>
+                                    <constraint firstItem="FLk-LD-UWd" firstAttribute="centerX" secondItem="D6t-mF-ace" secondAttribute="centerX" id="coh-vC-jgZ"/>
+                                    <constraint firstItem="FLk-LD-UWd" firstAttribute="centerY" secondItem="D6t-mF-ace" secondAttribute="centerY" id="enI-aO-emQ"/>
+                                    <constraint firstAttribute="height" constant="300" id="j35-qH-ctu"/>
+                                    <constraint firstAttribute="width" constant="300" id="jQJ-Lf-w0y"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bAx-ZJ-jNS" appends="YES" id="Off-rg-dQ6"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SM6-P1-mVK" customClass="PushButtonView" customModule="WaterFlo" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="A0L-fM-gzD"/>
+                                    <constraint firstAttribute="width" constant="100" id="o8o-Jg-yl0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.3019683585333085" green="0.99967086522379767" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addGlass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U1I-SV-ze1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbG-W4-hRq" customClass="PushButtonView" customModule="WaterFlo" customModuleProvider="target">
+                                <rect key="frame" x="162.5" y="448" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="M4P-dm-3Wq"/>
+                                    <constraint firstAttribute="width" constant="50" id="Wkd-ah-11Z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.30756447479999999" blue="0.39403258600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="removeGlass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZH-z4-aKM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SM6-P1-mVK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HRb-3Z-Z8e"/>
+                            <constraint firstItem="D6t-mF-ace" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QgQ-EY-0na"/>
+                            <constraint firstItem="D6t-mF-ace" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V85-DS-oqV"/>
+                            <constraint firstItem="SM6-P1-mVK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eTa-P8-1y6"/>
+                            <constraint firstItem="FbG-W4-hRq" firstAttribute="top" secondItem="SM6-P1-mVK" secondAttribute="bottom" constant="64.5" id="gFb-E3-yAf"/>
+                            <constraint firstItem="FbG-W4-hRq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ibe-FR-prr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addGlassButton" destination="SM6-P1-mVK" id="ykC-Hv-QQy"/>
+                        <outlet property="containerView" destination="D6t-mF-ace" id="2eq-Y1-ejs"/>
+                        <outlet property="counterLabel" destination="Tzl-a3-nn3" id="Ycd-4Q-k6O"/>
+                        <outlet property="counterView" destination="LIz-P6-5i5" id="ov3-Yx-bRc"/>
+                        <outlet property="graphView" destination="FLk-LD-UWd" id="AYP-iD-KJT"/>
+                        <outlet property="removeGlassButton" destination="FbG-W4-hRq" id="U8G-BW-wBN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bAx-ZJ-jNS">
+                    <connections>
+                        <action selector="counterViewTapWithGesture:" destination="BYZ-38-t0r" id="gc4-6G-kXw"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
